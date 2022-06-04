@@ -4,6 +4,8 @@
 2. [Element.classList.add("className")](#elementclasslistaddclassname)
 3. [Math.floor(Math.random() * theArray.length)](#mathfloormathrandom--thearraylength)
 4. [some()](#some)
+5. [A Website for Key Code Information](#a-website-for-key-code-information)
+6. [event.keyCode](#eventkeycode)
 
 ### Array.from()
 
@@ -47,4 +49,18 @@ console.log(div.outerHTML);
 ```javascript
 [2, 5, 8, 1, 4].some(x => x > 10);  // false
 [12, 5, 8, 1, 4].some(x => x > 10); // true
+```
+
+### A Website for Key Code Information
+
+- [keycode.info](https://www.toptal.com/developers/keycode)
+
+### event.keyCode
+
+```javascript
+function control(e) {
+  if (e.keycode === 37) {
+    moveLeft()
+  }
+}
 ```
