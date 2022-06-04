@@ -3,6 +3,7 @@
 1. [Array.from()](#arrayfrom)
 2. [Element.classList.add("className")](#elementclasslistaddclassname)
 3. [Math.floor(Math.random() * theArray.length)](#mathfloormathrandom--thearraylength)
+4. [some()](#some)
 
 ### Array.from()
 
@@ -38,3 +39,12 @@ console.log(div.outerHTML);
 ### Math.floor(Math.random() * theArray.length)
 
 - To get a random value, `Math.floor(Math.random() * theArray.length)` or `Math.floor(Math.random() * 10)` (providing 0<= random number <10)
+
+### some()
+
+- [Reference: Array.prototype.some()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/some)
+
+```javascript
+[2, 5, 8, 1, 4].some(x => x > 10);  // false
+[12, 5, 8, 1, 4].some(x => x > 10); // true
+```
