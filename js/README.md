@@ -1,6 +1,7 @@
 # JavaScript
 
 1. [Array.from()](#arrayfrom)
+2. [Element.classList.add("className")](#elementclasslistaddclassname)
 
 ### Array.from()
 
@@ -12,4 +13,23 @@ console.log(Array.from('foo'));
 
 console.log(Array.from([1, 2, 3], x => x + x));
 // expected output: Array [2, 4, 6]
+```
+
+### Element.classList.add("className")
+
+- [Reference: Element.classList](https://developer.mozilla.org/en-US/docs/Web/API/Element/classList)
+
+```javascript
+const div = document.createElement('div');
+div.className = 'foo';
+
+// our starting state: <div class="foo"></div>
+console.log(div.outerHTML);
+
+// use the classList API to remove and add classes
+div.classList.remove("foo");
+div.classList.add("anotherclass");
+
+// <div class="anotherclass"></div>
+console.log(div.outerHTML);
 ```
