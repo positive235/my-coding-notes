@@ -1,6 +1,6 @@
 # My Coding Notes
 
-1. Terminal (Command)
+1. [Terminal (Command)](terminal-command/)
 2. English in CS
 3. HTML
 4. CSS
