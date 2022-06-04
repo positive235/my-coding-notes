@@ -2,6 +2,7 @@
 
 1. [Array.from()](#arrayfrom)
 2. [Element.classList.add("className")](#elementclasslistaddclassname)
+3. [Math.floor(Math.random() * theArray.length)](#mathfloormathrandom--thearraylength)
 
 ### Array.from()
 
@@ -33,3 +34,7 @@ div.classList.add("anotherclass");
 // <div class="anotherclass"></div>
 console.log(div.outerHTML);
 ```
+
+### Math.floor(Math.random() * theArray.length)
+
+- To get a random value, `Math.floor(Math.random() * theArray.length)` or `Math.floor(Math.random() * 10)` (providing 0<= random number <10)
